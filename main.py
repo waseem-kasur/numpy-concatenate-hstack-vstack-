@@ -1,0 +1,13 @@
+import numpy as np  
+arr=np.array([['a','b','c'],['d','e','f']])
+arr2=np.array([['g','h','i'],['j','k','l']])
+print(arr.ndim)
+print(arr2.ndim)
+a=np.concatenate((arr,arr2))
+print(a)
+b=np.concatenate((arr,arr2),axis=1)
+print(b)
+c=np.vstack((arr,arr2))
+print(c)
+d=np.hstack((arr,arr2))
+print(d)
